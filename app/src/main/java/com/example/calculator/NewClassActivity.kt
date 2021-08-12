@@ -7,10 +7,8 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.calculator.R
 
-
-public class NewClassActivity : AppCompatActivity() {
+class NewClassActivity : AppCompatActivity() {
     private var result: TextView? = null
     private var height: EditText? = null
     private var result_btn: Button? = null
