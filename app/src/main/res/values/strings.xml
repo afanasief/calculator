@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="main_view">Дізнайтеся правильну вагу</string>
+    <string name="no_user_input">Введіть текст</string>
+
+
+
+</resources>

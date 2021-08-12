@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/main_view"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="left"
+        android:layout_marginLeft="15sp"
+        android:layout_below="@id/textView"
+        android:inputType="textPersonName"
+        android:layout_marginTop="40sp"
+        android:textColorHint="@color/def"
+        android:backgroundTint="@color/teal_200"
+        android:hint="Введіть свій ріст" />
+
+    <Button
+        android:id="@+id/result_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:layout_below="@id/female"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="100sp"
+        android:textColor="@color/black"
+        android:text="Обрахувати" />
+
+    <Button
+        android:id="@+id/male"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stat"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="250sp"
+        android:backgroundTint="#03A9F4"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:text="чоловіча" />
+
+    <Button
+        android:id="@+id/female"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/male"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="250sp"
+        android:backgroundTint="#E91E63"
+        android:gravity="left"
+        android:text="Жіноча" />
+    <TextView
+        android:id="@+id/stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="left"
+        android:layout_marginLeft="30sp"
+        android:text="Ваша стать"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/height"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_below="@id/result_btn"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="3dp" />
+</RelativeLayout>
